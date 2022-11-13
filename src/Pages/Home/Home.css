@@ -18,16 +18,27 @@
 .main-home-container img {
     position: absolute;
     z-index: 12;
-    width: 600px;
+    width: min(600px, 75%);
 }
 
 .main-home-container video {
     position: absolute;
-    height: auto;
-    width: 100vw;
+    height: 100vh;
+    width: auto;
     z-index: 9;
 
+
 }
+
+/* .background {
+    position: absolute;
+    background-color: #330867;
+    height: 100vh;
+    width: 100vw;
+    z-index: 30;
+    
+
+} */
 
 .video-tint {
     position: absolute;
@@ -63,7 +74,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 115vh;
     width: 100vw;
     margin-top: -3px;
     background-color: rgb(0, 0, 0);
@@ -73,7 +84,7 @@
     padding-block-start: 10px;
     border-image-source: linear-gradient(90deg, #30cfd0, #330867);
     border-image-slice: 1;
-    
+
 
 }
 
@@ -83,51 +94,55 @@
     border-radius: 5px;
     overflow: hidden;
     display: flex;
-  
-    
+
+
     /* justify-content: center;
     align-items: center; */
-    
-    
+
+
 }
-.texts{
+
+.texts {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     justify-content: start;
     width: 50%;
     /* height: 10rem; */
     background-color: white;
     padding-left: 2rem;
-   
+
 }
-.texts h1{
-    font-size: 2.5em;
+
+.texts h1 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
     margin-top: 0;
 
 }
-.texts h2{
+
+.texts h2 {
+    font-size: clamp(1rem, 2vw, 2rem);
     color: gray;
     margin-bottom: 0;
     padding-top: 3rem;
 }
-.input-component{
+
+.input-component {
     width: 25rem;
     height: 2.5rem;
- 
-    margin-right: 10px ;
+
+    margin-right: 10px;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     margin-top: 1.5rem;
 }
 
-.input-component input{
-   width: 75%;
-   margin-right: 10px
-
+.input-component input {
+    width: 75%;
+    margin-right: 10px
 }
 
-.input-component button{
+.input-component button {
     width: 25%;
     color: white;
     background-color: black;
@@ -137,12 +152,13 @@
 }
 
 
-.imgs{
-    width:50%;
+.imgs {
+    width: 50%;
     position: relative;
     overflow: hidden;
 }
-.imgs::before{
+
+.imgs::before {
     content: '';
     position: absolute;
     left: -6.1em;
@@ -152,38 +168,95 @@
     width: 40%;
     height: 140%;
 }
+
 .imgs img {
     width: 30rem;
     height: 30rem;
-   object-fit: cover;
-   /* overflow: hidden; */
-    
+    object-fit: cover;
+    /* overflow: hidden; */
+
 }
-@media screen and (max-width: 750px){
-    .card-sub{
+
+
+/* __vv__MEDIA QUERIES__vv__*/
+
+/*_____MOBILE DEVICE_____*/
+@media screen and (width < 767px) {
+    .card-sub {
         display: block;
-        
-        width: 90%
+        height: auto;
+        width: min(25rem, 75%);
     }
 
-    .texts{
-        height: 10rem;
+    .texts {
+        height: 15rem;
+        width: 100%;
+        padding-left: 1rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .imgs {
         width: 100%;
     }
 
-    .imgs{
+    .imgs img {
+        height: 60vh;
         width: 100%;
+
+
     }
 
-    .imgs img{ width: 100%}
-
-    .imgs::before{
+    .imgs::before {
         width: 120%;
         height: 40%;
         top: -5em;
         left: 50%;
+
         transform: translateX(-50%) rotate(10deg);
     }
 
+    .texts h2 {
+        padding-top: 1.5rem;
+    }
+
+    .texts h1 {
+        padding-right: 2rem;
+
+    }
+
+    .input-component {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .input-component input {
+        width: 90%;
+        height: 30px;
+        margin-right: 0;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        text-align: center;
+
+    }
+
+    .input-component button {
+        width: 93%;
+        height: 35px;
+        font-weight: 600;
+        font-size: large;
+    }
+
+
 }
-    
+
+/*_____TABLET DEVICE_____*/
+@media screen and (width > 767px) and (width < 1023px) {}
+
+/*_____DESKTOP DEVICE_____*/
+@media screen and (width > 1900px) {}
+
+/* __^^__MEDIA QUERIES__^^__*/

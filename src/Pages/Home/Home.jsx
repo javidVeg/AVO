@@ -33,6 +33,7 @@ const Home = () => {
                     </svg>
                 </section>
                 {/* Z-INDEX 9 */}
+                {/* <div className="background"></div> */}
                 <video ref={videoRef} autoPlay muted typeof="video/mp4" loop src={mainVideo} alt="main-video" />
             </div>
             <section className='section-2'>
