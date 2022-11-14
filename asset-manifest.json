@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AVO/static/css/main.6f8d6bcc.css",
-    "main.js": "/AVO/static/js/main.2208c3d9.js",
+    "main.css": "/AVO/static/css/main.b75fb5f4.css",
+    "main.js": "/AVO/static/js/main.a8dc245d.js",
     "static/media/hero-video.mp4": "/AVO/static/media/hero-video.8a753de001556f57ce2e.mp4",
     "static/media/Instagram-Icon.png": "/AVO/static/media/Instagram-Icon.3d6c8f9c6e4bb23ce95e.png",
     "static/media/AVO.png": "/AVO/static/media/AVO.e89e12273bd5a568f05e.png",
@@ -9,11 +9,11 @@
     "static/media/concrete-wall-2.png": "/AVO/static/media/concrete-wall-2.28844a728d06b7ed765b.png",
     "static/media/img_1.jpg": "/AVO/static/media/img_1.5bf7deaf274b67ea860a.jpg",
     "index.html": "/AVO/index.html",
-    "main.6f8d6bcc.css.map": "/AVO/static/css/main.6f8d6bcc.css.map",
-    "main.2208c3d9.js.map": "/AVO/static/js/main.2208c3d9.js.map"
+    "main.b75fb5f4.css.map": "/AVO/static/css/main.b75fb5f4.css.map",
+    "main.a8dc245d.js.map": "/AVO/static/js/main.a8dc245d.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f8d6bcc.css",
-    "static/js/main.2208c3d9.js"
+    "static/css/main.b75fb5f4.css",
+    "static/js/main.a8dc245d.js"
   ]
 }
