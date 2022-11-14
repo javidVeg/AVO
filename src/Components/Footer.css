@@ -1,6 +1,6 @@
 footer {
     width: 100vw;
-    height: 45vh;
+    height: 40vh;
     background-color: rgb(235, 235, 235);
     /* overflow: hidden; */
     display: flex;
@@ -71,7 +71,9 @@ footer img {
 }
 
 .footer-copy p {
-    margin: 0;
+    margin-top: -45px;
+    color: gray;
+    /* margin: 0; */
     font-size: clamp(.7rem, 2vw, 1rem);
 }
 
@@ -127,6 +129,15 @@ footer img {
     footer {
         height: 60vh;
     }
+    .footer-copy p {
+        margin-top: 0;
+        /* margin: 0; */
+        font-size: clamp(.7rem, 2vw, 1rem);
+    }
+    .contact {
+        text-align: center;
+    }
+    
 }
 
 /*_____TABLET DEVICE_____*/
