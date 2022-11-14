@@ -24,13 +24,13 @@ const Footer = () => {
                         <h3>Email Us: <a href="mailto: info@allveteransoutside.com">info@allveteransoutside.com</a></h3>
                     </div>
                     <div className="socials">
-                        <h3>Follow us!</h3>
-                        <div className="icons">
-                            <a href='https//:'><AiFillFacebook color='black' size={30} /></a>
-                            <a href='https//:'><AiFillInstagram color='black' size={30} /></a>
-                            <a href='https//:'><AiFillTwitterSquare color='black' size={30} /></a>
-                            <a href='https//:'><BsDiscord color='black' size={30} /></a>
+                        <div className='IG-tag'>
+                            <a href='https//:'>
+                                <AiFillInstagram color='black' size={50} />
+                                <h3>@allveteransoutside</h3>
+                            </a>
                         </div>
+
                     </div>
                 </div>
                 <div className="footer-copy">

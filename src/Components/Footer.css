@@ -1,25 +1,29 @@
 footer {
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
     background-color: rgb(235, 235, 235);
     /* overflow: hidden; */
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
 
 footer img {
-    width: 12vw;
+    width: min(200px, 25vw )
 }
 
 .contact a {
     color: rebeccapurple;
     text-decoration: none;
 }
+
 .contact h2 {
-    font-size: clamp(1.1rem, 3vw, 2rem); 
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+}
+.contact h3 {
+    font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
 .socials {
@@ -35,21 +39,23 @@ footer img {
     place-content: center;
 }
 
-.socials .icons{
+.socials .icons {
     size: 2rem;
     display: flex;
     flex-wrap: nowrap;
-    
+
 }
-.socials .icons a{
+
+.socials .icons a {
     size: 0rem;
     display: flex;
     flex-wrap: nowrap;
-    
+
 }
-.socials .icons a{
-   margin: 1em;
-    
+
+.socials .icons a {
+    margin: 1em;
+
 }
 
 .footer-main {
@@ -66,12 +72,43 @@ footer img {
 
 .footer-copy p {
     margin: 0;
+    font-size: clamp(.7rem, 2vw, 1rem);
+}
+
+.IG-tag {
+    scale: 80%;
+    border-radius: 50px;
+    border: double 2px transparent;
+    background-image: linear-gradient(rgb(255, 255, 255),  rgb(242, 242, 242)), linear-gradient(90deg, #30cfd0, #330867);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-color: rgb(91, 91, 91);
+    box-shadow:  1px 3px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.IG-tag a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
 
 }
+
+.IG-tag h3 {}
+
+
+
 /* __vv__MEDIA QUERIES__vv__*/
 
 /*_____MOBILE DEVICE_____*/
 @media screen and (width < 767px) {
+
     /* .contact h2 {
         font-size: clamp(1.5rem, 3vw, 2.5rem); 
     } */
@@ -80,9 +117,12 @@ footer img {
 
         flex-direction: column;
         justify-content: space-evenly;
-       
+
         flex-wrap: nowrap;
-    
+
+    }
+    .IG-tag {
+        scale: 65%;
     }
 }
 
