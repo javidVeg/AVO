@@ -1,6 +1,6 @@
 footer {
     width: 100vw;
-    height: 60vh;
+    height: 45vh;
     background-color: rgb(235, 235, 235);
     /* overflow: hidden; */
     display: flex;
@@ -123,6 +123,9 @@ footer img {
     }
     .IG-tag {
         scale: 65%;
+    }
+    footer {
+        height: 60vh;
     }
 }
 
