@@ -1,6 +1,6 @@
 footer {
     width: 100vw;
-    height: 45vh;
+    height: 50vh;
     background-color: rgb(235, 235, 235);
     /* overflow: hidden; */
     display: flex;
@@ -18,6 +18,9 @@ footer img {
     color: rebeccapurple;
     text-decoration: none;
 }
+.contact h2 {
+    font-size: clamp(1.1rem, 3vw, 2rem); 
+}
 
 .socials {
     width: 100px;
@@ -33,6 +36,13 @@ footer img {
 }
 
 .socials .icons{
+    size: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+.socials .icons a{
+    size: 0rem;
     display: flex;
     flex-wrap: nowrap;
     
@@ -58,3 +68,28 @@ footer img {
     margin: 0;
 
 }
+/* __vv__MEDIA QUERIES__vv__*/
+
+/*_____MOBILE DEVICE_____*/
+@media screen and (width < 767px) {
+    /* .contact h2 {
+        font-size: clamp(1.5rem, 3vw, 2.5rem); 
+    } */
+    .footer-main {
+        height: auto;
+
+        flex-direction: column;
+        justify-content: space-evenly;
+       
+        flex-wrap: nowrap;
+    
+    }
+}
+
+/*_____TABLET DEVICE_____*/
+@media screen and (width > 767px) and (width < 1023px) {}
+
+/*_____DESKTOP DEVICE_____*/
+@media screen and (width > 1900px) {}
+
+/* __^^__MEDIA QUERIES__^^__*/

@@ -1,7 +1,8 @@
 .container {
     /* scroll-snap-type: y mandatory;
     overflow-y: scroll; */
-    height: 100vh;
+    height: auto;
+    overflow: hidden;
 }
 
 .main-home-container {
@@ -28,17 +29,19 @@
     z-index: 9;
 
 
+
 }
 
-/* .background {
+.background {
     position: absolute;
-    background-color: #330867;
+    background-image: url(../../Media/concrete-wall-2.png);
+    opacity: 0.5;
     height: 100vh;
     width: 100vw;
-    z-index: 30;
+    z-index: 10;
     
 
-} */
+}
 
 .video-tint {
     position: absolute;
@@ -240,6 +243,7 @@
         margin-bottom: 10px;
         border-radius: 3px;
         text-align: center;
+        font-size: medium;
 
     }
 
@@ -254,9 +258,16 @@
 }
 
 /*_____TABLET DEVICE_____*/
-@media screen and (width > 767px) and (width < 1023px) {}
+@media screen and (width > 767px) and (width < 1023px) {
+    
+}
 
 /*_____DESKTOP DEVICE_____*/
-@media screen and (width > 1900px) {}
+@media screen and (width > 1182px) {
+    .main-home-container video {
+        height: auto;
+        width: 100vw;
+    }
+}
 
 /* __^^__MEDIA QUERIES__^^__*/

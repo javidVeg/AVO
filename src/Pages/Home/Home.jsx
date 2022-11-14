@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import "./Home.css"
-import mainVideo from "../../Media/main-video-2.mp4"
+import mainVideo from "../../Media/hero-video.mp4"
 import avoLogo from "../../Media/AVO.png"
 import img_1 from "../../Media/img_1.jpg"
 import Footer from '../../Components/Footer/Footer'
@@ -17,7 +17,7 @@ const Home = () => {
                 {/* Z-INDEX 11 */}
                 <div className="video-tint"></div>
                 {/* Z-INDEX 10 */}
-                <section className='noise-filter'>
+                {/* <section className='noise-filter'>
                     <svg className='svgs'>
                         <filter id="noise">
                             <feTurbulence id="turbulence">
@@ -31,9 +31,9 @@ const Home = () => {
                             <feDisplacementMap in="SourceGraphic" scale="60"></feDisplacementMap>
                         </filter>
                     </svg>
-                </section>
+                </section> */}
                 {/* Z-INDEX 9 */}
-                {/* <div className="background"></div> */}
+                <div className="background"></div>
                 <video ref={videoRef} autoPlay muted typeof="video/mp4" loop src={mainVideo} alt="main-video" />
             </div>
             <section className='section-2'>
