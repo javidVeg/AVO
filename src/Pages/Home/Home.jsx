@@ -8,8 +8,7 @@ import Footer from '../../Components/Footer/Footer'
 
 const Home = () => {
 
-    const videoRef = useRef(null)
-
+   
     return (
         <div className='container'>
             <div className="main-home-container">
@@ -34,7 +33,8 @@ const Home = () => {
                 </section> */}
                 {/* Z-INDEX 9 */}
                 <div className="background"></div>
-                <video ref={videoRef} autoPlay muted typeof="video/mp4" loop src={mainVideo} alt="main-video" />
+                <video className="hero-video" src={mainVideo} type="video/mp4" muted autoPlay="true" loop playsInline preload="true"  />
+                
             </div>
             <section className='section-2'>
                 <div className="subscribe-window">
