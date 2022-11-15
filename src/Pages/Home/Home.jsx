@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import "./Home.css"
-import mainVideo from "../../Media/hero-video.mp4"
+import mainVideo from "../../Media/hero-videoHD.mp4"
 import avoLogo from "../../Media/AVO.png"
 import img_1 from "../../Media/img_1.jpg"
 import Footer from '../../Components/Footer/Footer'

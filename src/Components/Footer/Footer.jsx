@@ -20,7 +20,7 @@ const Footer = () => {
                 <div className="footer-main">
                     <img src={AVO_footer} alt="AVO-footer" />
                     <div className="contact">
-                        <h2>Are you a Veteran and what to get involved?</h2>
+                        <h2>Are you a Veteran and wants to get involved?</h2>
                         <h3>Email Us: <a href="mailto: info@allveteransoutside.com">info@allveteransoutside.com</a></h3>
                     </div>
                     <div className="socials">
