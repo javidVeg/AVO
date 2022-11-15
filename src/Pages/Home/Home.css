@@ -239,20 +239,22 @@
 
     .input-component input {
         width: 90%;
-        height: 30px;
+        height: 35px;
         margin-right: 0;
         margin-bottom: 10px;
         border-radius: 3px;
         text-align: center;
         font-size: medium;
+        box-sizing: border-box;
 
     }
 
     .input-component button {
-        width: 93%;
+        width: 90%;
         height: 35px;
         font-weight: 600;
         font-size: large;
+        box-sizing: border-box;
     }
     
 

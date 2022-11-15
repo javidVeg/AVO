@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useState, useEffect  } from 'react'
 import "./Home.css"
 import mainVideo from "../../Media/hero-videoHD.mp4"
 import avoLogo from "../../Media/AVO.png"
@@ -8,6 +8,24 @@ import Footer from '../../Components/Footer/Footer'
 
 const Home = () => {
 
+    const [ inputData, setInputData ] = useState({ email: ''});
+
+    console.log(inputData);
+
+    const onChange  = (e) => {
+        setInputData({
+            ...inputData, [e.target.name]: e.target.value
+        })
+    };
+
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        console.log(inputData)
+        setInputData({ email: ""})
+    };
+
+    
+    
    
     return (
         <div className='container'>
@@ -43,8 +61,8 @@ const Home = () => {
                             <h2>More Coming Soon</h2>
                             <h1>Sign up to recieve upcoming news and updates to the AVO project!</h1>
                             <div className='input-component'>
-                                <input placeholder='Email Address'></input>
-                                <button>Submit</button>
+                                <input required placeholder='Email Address' name="email" value ={inputData.email} onChange={onChange} ></input>
+                                <button onClick={(e) => handleSubmit(e)}>Submit</button>
                             </div>
                         </div>
                         <div className="imgs"><img src={img_1} alt="img_1" /></div>
