@@ -185,7 +185,94 @@
 /* __vv__MEDIA QUERIES__vv__*/
 
 /*_____MOBILE DEVICE_____*/
-@media screen and (width < 930px) {
+
+/*______________________________________ LANDSCAPE ______________________________________*/
+@media screen and (width < 930px) and (orientation: landscape) {
+    .main-home-container img {
+        width: 40%
+        
+    }
+    .main-home-container video {
+        height: auto;
+        width: 100%;
+    }
+    .subscribe-window {
+
+        height: auto;
+    }
+    .card-sub {
+        display: block;
+        margin-top: 80px;
+        height: 45rem;
+        width: min(25rem, 75%);
+    }
+   
+    .imgs img {
+        height: 100vh;
+        width: 100%;
+    }
+    .texts {
+        height: 15rem;
+        width: 100%;
+        padding-left: 1rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .imgs {
+        width: 100%;
+    }
+    
+    .imgs::before {
+        width: 120%;
+        height: 50%;
+        top: -5em;
+        left: 50%;
+
+        transform: translateX(-50%) rotate(10deg);
+    }
+
+    .texts h2 {
+        padding-top: 1.5rem;
+    }
+
+    .texts h1 {
+        padding-right: 2rem;
+
+    }
+
+    .input-component {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .input-component input {
+        width: 90%;
+        height: 35px;
+        margin-right: 0;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        text-align: center;
+        font-size: medium;
+        box-sizing: border-box;
+
+    }
+
+    .input-component button {
+        width: 90%;
+        height: 35px;
+        font-weight: 600;
+        font-size: large;
+        box-sizing: border-box;
+    }
+    
+}
+
+/*______________________________________ PORTRAIT ______________________________________*/
+@media screen and (width < 930px) and (orientation: portrait) {
     .card-sub {
         display: block;
         height: auto;
