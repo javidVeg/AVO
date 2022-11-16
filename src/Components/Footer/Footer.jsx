@@ -1,5 +1,5 @@
 import React from 'react'
-import "../Footer.css"
+import "./Footer.css"
 import AVO_footer from "../../Media/AVO_footer.png"
 import IG_logo from "../../Media/Instagram-Icon.png"
 import { AiFillInstagram } from 'react-icons/ai';

@@ -11,7 +11,7 @@ footer {
 }
 
 footer img {
-    width: min(200px, 25vw )
+    width: min(150px, 25vw, 200px )
 }
 
 .contact a {
@@ -109,7 +109,7 @@ footer img {
 /* __vv__MEDIA QUERIES__vv__*/
 
 /*_____MOBILE DEVICE_____*/
-@media screen and (width < 767px) {
+@media screen and (width < 930px) {
 
     /* .contact h2 {
         font-size: clamp(1.5rem, 3vw, 2.5rem); 
@@ -137,11 +137,18 @@ footer img {
     .contact {
         text-align: center;
     }
+    /* footer img {
+        margin-top: 70px;
+    } */
     
 }
 
 /*_____TABLET DEVICE_____*/
-@media screen and (width > 767px) and (width < 1023px) {}
+@media screen and (width > 767px) and (width < 1023px) {
+     footer {
+        height: 70vh;
+    }
+}
 
 /*_____DESKTOP DEVICE_____*/
 @media screen and (width > 1900px) {}

@@ -92,7 +92,7 @@
 }
 
 .card-sub {
-    width: 60rem;
+    width: min(100%, 60rem);
     height: 30rem;
     border-radius: 5px;
     overflow: hidden;
@@ -185,7 +185,7 @@
 /* __vv__MEDIA QUERIES__vv__*/
 
 /*_____MOBILE DEVICE_____*/
-@media screen and (width < 767px) {
+@media screen and (width < 930px) {
     .card-sub {
         display: block;
         height: auto;
