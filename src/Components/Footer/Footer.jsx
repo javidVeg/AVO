@@ -25,7 +25,7 @@ const Footer = () => {
                     </div>
                     <div className="socials">
                         <div className='IG-tag'>
-                            <a href='https//:'>
+                            <a href='https://instagram.com/allveteransoutside?igshid=YmMyMTA2M2Y='>
                                 <AiFillInstagram color='black' size={50} />
                                 <h3>@allveteransoutside</h3>
                             </a>
