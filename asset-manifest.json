@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AVO/static/css/main.1f82b1cb.css",
-    "main.js": "/AVO/static/js/main.a0ffa85c.js",
+    "main.js": "/AVO/static/js/main.a0350116.js",
     "static/media/hero-videoHD.mp4": "/AVO/static/media/hero-videoHD.b84e7ffaaa256e5726d0.mp4",
     "static/media/Instagram-Icon.png": "/AVO/static/media/Instagram-Icon.3d6c8f9c6e4bb23ce95e.png",
     "static/media/AVO.png": "/AVO/static/media/AVO.e89e12273bd5a568f05e.png",
@@ -10,10 +10,10 @@
     "static/media/img_1.jpg": "/AVO/static/media/img_1.5bf7deaf274b67ea860a.jpg",
     "index.html": "/AVO/index.html",
     "main.1f82b1cb.css.map": "/AVO/static/css/main.1f82b1cb.css.map",
-    "main.a0ffa85c.js.map": "/AVO/static/js/main.a0ffa85c.js.map"
+    "main.a0350116.js.map": "/AVO/static/js/main.a0350116.js.map"
   },
   "entrypoints": [
     "static/css/main.1f82b1cb.css",
-    "static/js/main.a0ffa85c.js"
+    "static/js/main.a0350116.js"
   ]
 }
