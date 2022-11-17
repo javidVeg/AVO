@@ -14,31 +14,32 @@ import { Flip, toast } from "react-toastify";
 const Home = () => {
 
     const [inputData, setInputData] = useState({ email: '' });
-    const [data, setData] = useState([])
-
-    const dataCollectionRef = collection(db, "avo-email")
-
-    console.log(inputData);
-
+//! Changes the state of the email input
     const onChange = (e) => {
         setInputData({
             ...inputData, [e.target.name]: e.target.value
         })
     };
-
-    const register = async () => {
-        await addDoc(dataCollectionRef, { email: inputData.email })
+//! Sends data to firestore database and returns assigned id to console.log
+    const addEmail = async () => {
+        try {
+            const docRef = await addDoc(collection(db, "avo-email"), {
+              email: inputData,    
+            });
+            console.log("Document written with ID: ", docRef.id);
+          } catch (e) {
+            console.error("Error adding document: ", e);
+          }
     }
-
+//! When submitted Sends data to DB, creates toast, and then sets input feild to an empty string
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(inputData);
-        setInputData({ email: "" });
-        // register();
+        addEmail();
         notify();
+        setInputData({ email: "" });
     };
-
-    const notify = () => toast.success('Your email address has been added! 🪖', {
+//! Creates toast with the inputed email address
+    const notify = () => toast.success(`${inputData.email} has been added! 🪖`, {
         position: "top-left",
         autoClose: 5000,
         hideProgressBar: false,
@@ -48,22 +49,6 @@ const Home = () => {
         theme: "light",
         transition: Flip
     });
-
-    console.log(notify)
-
-    // useEffect(() => {
-    //     const getData = async () => {
-    //         const datas = await getDocs(dataCollectionRef)
-    //         setData(datas.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
-
-    //     }
-
-    //     getData()
-    // }, [dataCollectionRef])
-
-
-
-
 
     return (
         <div className='container'>
