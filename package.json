@@ -1,6 +1,6 @@
 {
-  "homepage": "https://javidveg.github.io/AVO",
-  "name": "avo",
+  "name": "all-veterans-outside",
+  "homepage": "https://allveteransoutside.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

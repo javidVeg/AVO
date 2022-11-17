@@ -74,7 +74,7 @@ const Home = () => {
                 </section> */}
                 {/* Z-INDEX 9 */}
                 <div className="background"></div>
-                <video className="hero-video" src={mainVideo} type="video/mp4" muted autoPlay="true" loop playsInline preload="true" />
+                <video className="hero-video" src={mainVideo} type="video/mp4" muted autoPlay={true} loop playsInline preload="true" />
 
             </div>
             <section className='section-2'>
