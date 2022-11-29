@@ -19,7 +19,7 @@
 .main-home-container img {
     position: absolute;
     z-index: 12;
-    width: min(600px, 75%);
+    width: min(550px, 75%);
 }
 
 .main-home-container video {
@@ -39,7 +39,7 @@
     height: 100vh;
     width: 100vw;
     z-index: 10;
-    
+
 
 }
 
@@ -170,15 +170,37 @@
     background: white;
     width: 40%;
     height: 140%;
+
 }
+
+.fade-anim {
+    animation: fadeAnim 0.5s ease-out;
+}
+
+@keyframes fadeAnim {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 
 .imgs img {
     width: 30rem;
     height: 30rem;
     object-fit: cover;
-    border-radius: 5px ;
+    border-radius: 5px;
     /* overflow: hidden; */
-
+    /* animation: fadeIn 5s; */
+    /* animation: fadeAnim 0.5s ease-out reverse; */
 }
 
 
@@ -190,27 +212,30 @@
 @media screen and (width < 930px) and (orientation: landscape) {
     .main-home-container img {
         width: 40%
-        
     }
+
     .main-home-container video {
-        height: auto;
-        width: 100%;
+        height: 100vh;
+        width: auto;
     }
+
     .subscribe-window {
 
         height: auto;
     }
+
     .card-sub {
         display: block;
         margin-top: 80px;
         height: 45rem;
         width: min(25rem, 75%);
     }
-   
+
     .imgs img {
-        height: 100vh;
+        height: 65vh;
         width: 100%;
     }
+
     .texts {
         height: 15rem;
         width: 100%;
@@ -222,10 +247,10 @@
     .imgs {
         width: 100%;
     }
-    
+
     .imgs::before {
         width: 120%;
-        height: 50%;
+        height: 40%;
         top: -5em;
         left: 50%;
 
@@ -268,7 +293,7 @@
         font-size: large;
         box-sizing: border-box;
     }
-    
+
 }
 
 /*______________________________________ PORTRAIT ______________________________________*/
@@ -303,7 +328,6 @@
         height: 50%;
         top: -5em;
         left: 50%;
-
         transform: translateX(-50%) rotate(10deg);
     }
 
@@ -343,14 +367,19 @@
         font-size: large;
         box-sizing: border-box;
     }
-    
+
 
 
 }
 
 /*_____TABLET DEVICE_____*/
-@media screen and (width > 767px) and (width < 1023px) {
-    
+@media screen and (width > 767px) and (width < 1182px) {
+    .main-home-container video {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
 }
 
 /*_____DESKTOP DEVICE_____*/

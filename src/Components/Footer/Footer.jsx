@@ -14,13 +14,25 @@ import { BsDiscord } from 'react-icons/bs';
 
 
 const Footer = () => {
+    // const x = () => {
+    //     for (let i = 1; i <= 5; i++) {
+    //         setTimeout(() => {
+    //             console.log(i)
+    //         }, i * 1000)
+    //     }
+
+      
+
+    // }
+    // x();
+
     return (
         <div>
             <footer>
                 <div className="footer-main">
                     <img src={AVO_footer} alt="AVO-footer" />
                     <div className="contact">
-                        <h2>Are you a Veteran and wants to get involved?</h2>
+                        <h2>Are you a Veteran and want to get involved?</h2>
                         <h3>Email Us: <a href="mailto: info@allveteransoutside.com">info@allveteransoutside.com</a></h3>
                     </div>
                     <div className="socials">
